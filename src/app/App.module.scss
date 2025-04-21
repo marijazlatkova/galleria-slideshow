@@ -1,0 +1,14 @@
+@use "../styles/index" as *;
+
+.App {
+  background: $white;
+  padding: 0 20px;
+
+  @include md {
+    padding: 0 40px;
+  }
+
+  @include xxl {
+    padding: 0 80px;
+  }
+}

@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+@mixin sm {
+  @media screen and (min-width: $break-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin mdplus {
+  @media screen and (min-width: $break-mdplus) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: $break-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: $break-xl) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width: $break-xxl) {
+    @content;
+  }
+}

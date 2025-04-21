@@ -1,0 +1,55 @@
+@use "../../styles/index" as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @include xxl {
+    gap: 30px;
+  }
+}
+
+.content {
+  padding: 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 110px;
+
+  @include md {
+    width: 130px;
+  }
+
+  @include xxl {
+    width: 170px;
+  }
+}
+
+.slideshowBtn {
+  background: transparent;
+  color: $gray;
+  font-size: $font10;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 200ms;
+  cursor: pointer;
+
+  &:hover {
+    color: $black;
+  }
+
+  @include md {
+    font-size: $font12;
+  }
+}
+
+.separator {
+  border: 1px solid $light-gray;
+  width: 100%;
+}
