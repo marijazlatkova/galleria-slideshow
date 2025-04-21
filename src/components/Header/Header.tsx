@@ -15,7 +15,7 @@ export const Header = () => {
     });
   };
 
-  const label = open ? "start slideshow" : "stop slideshow";
+  const label = open ? "stop slideshow" : "start slideshow";
 
   return (
     <header className={styles.header}>
