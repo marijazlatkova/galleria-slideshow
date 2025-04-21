@@ -2,16 +2,24 @@ $font-primary: "Libre Baskerville", serif;
 
 $white: #ffffff;
 $black: #000000;
-$gray: #7d7d7d;
-$light-gray: #e6e6e6;
+$gray-700: #7d7d7d;
+$gray-200: #e6e6e6;
 
-$font10: 10px;
-$font12: 12px;
-$font14: 14px;
-$font16: 16px;
-$font18: 18px;
-$font20: 20px;
-$font24: 24px;
+$bg: $white;
+
+$slideshow-btn: $gray-700;
+$slideshow-btn-hover: $black;
+$separator: $gray-200;
+
+$fs-xs: 10px;
+$fs-sm: 12px;
+$fs-base: 14px;
+$fs-md: 16px;
+$fs-lg: 18px;
+$fs-xl: 20px;
+$fs-1-5xl: 22px;
+$fs-2xl: 24px;
+$fs-3xl: 30px;
 
 $break-sm: 640px;
 $break-md: 768px;

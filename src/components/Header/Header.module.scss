@@ -31,8 +31,8 @@
 
 .slideshowBtn {
   background: transparent;
-  color: $gray;
-  font-size: $font10;
+  color: $slideshow-btn;
+  font-size: $fs-xs;
   border: none;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -41,15 +41,15 @@
   cursor: pointer;
 
   &:hover {
-    color: $black;
+    color: $slideshow-btn-hover;
   }
 
   @include md {
-    font-size: $font12;
+    font-size: $fs-sm;
   }
 }
 
 .separator {
-  border: 1px solid $light-gray;
+  border: 1px solid $separator;
   width: 100%;
 }

@@ -1,7 +1,7 @@
 @use "../styles/index" as *;
 
 .App {
-  background: $white;
+  background: $bg;
   padding: 0 20px;
 
   @include md {
