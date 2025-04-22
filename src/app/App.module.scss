@@ -2,9 +2,9 @@
 
 .App {
   background: $bg;
-  padding: 0 20px;
+  padding: 0 24px;
 
-  @include md {
+  @include lg {
     padding: 0 40px;
   }
 

@@ -1,5 +1,9 @@
 @use "./variables" as *;
 
+@mixin fade-opacity($duration: 0.3s, $timing: ease-in-out) {
+  transition: opacity $duration $timing;
+}
+
 @mixin sm {
   @media screen and (min-width: $break-sm) {
     @content;

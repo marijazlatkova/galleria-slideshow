@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { SlideshowProvider } from "../providers/SlideshowProvider";
 import { Header } from "../components/Header/Header";
+import { Gallery } from "../components/Gallery/Gallery";
 import styles from "./App.module.scss";
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
       <SlideshowProvider>
         <Header />
         <Routes>
-          <Route />
+          <Route path="/" element={<Gallery />} />
           <Route />
         </Routes>
       </SlideshowProvider>

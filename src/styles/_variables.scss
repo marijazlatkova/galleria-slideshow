@@ -11,6 +11,10 @@ $slideshow-btn: $gray-700;
 $slideshow-btn-hover: $black;
 $separator: $gray-200;
 
+$gallery-text: $white;
+$gradient-start: #00000000;
+$gradient-end: #000000d6;
+
 $fs-xs: 10px;
 $fs-sm: 12px;
 $fs-base: 14px;
@@ -21,9 +25,9 @@ $fs-1-5xl: 22px;
 $fs-2xl: 24px;
 $fs-3xl: 30px;
 
-$break-sm: 640px;
+$break-sm: 702px;
 $break-md: 768px;
 $break-mdplus: 844px;
-$break-lg: 1050px;
+$break-lg: 1024px;
 $break-xl: 1200px;
 $break-xxl: 1440px;

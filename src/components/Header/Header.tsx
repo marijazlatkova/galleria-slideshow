@@ -8,26 +8,28 @@ export const Header = () => {
   const navigate = useNavigate();
 
   const toggleSlideshow = () => {
-    setOpen(prev => {
-      const next = !prev;
-      navigate(next ? "/slideshow/0" : "/");
-      return next;
-    });
+    setOpen((prev) => !prev);
+    navigate(open ? "/" : "/slideshow/0");
   };
 
-  const label = open ? "stop slideshow" : "start slideshow";
+  const label = open ? "Stop slideshow" : "Start slideshow";
 
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <Link to="/" aria-label="go to homepage">
+        <Link
+          to="/"
+          onClick={() => setOpen(false)}
+          aria-label="Go to homepage"
+        >
           <img
             className={styles.logo}
             src={icons.logo}
-            alt="galleria logo"
+            alt="Galleria logo"
           />
         </Link>
         <button
+          type="button"
           onClick={toggleSlideshow}
           className={styles.slideshowBtn}
           aria-label={label}
