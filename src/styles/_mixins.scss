@@ -22,12 +22,6 @@
   }
 }
 
-@mixin lg {
-  @media screen and (min-width: $break-lg) {
-    @content;
-  }
-}
-
 @mixin xl {
   @media screen and (min-width: $break-xl) {
     @content;

@@ -4,10 +4,6 @@
   background: $bg;
   padding: 0 24px;
 
-  @include lg {
-    padding: 0 40px;
-  }
-
   @include xxl {
     padding: 0 80px;
   }
