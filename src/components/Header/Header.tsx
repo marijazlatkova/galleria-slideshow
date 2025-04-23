@@ -37,7 +37,7 @@ export const Header = () => {
           {label}
         </button>
       </div>
-      <div className={styles.separator} />
+      <hr className={styles.separator} />
     </header>
   );
 };
