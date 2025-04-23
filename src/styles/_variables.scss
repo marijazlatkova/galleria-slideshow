@@ -4,16 +4,11 @@ $white: #ffffff;
 $black: #000000;
 $gray-700: #7d7d7d;
 $gray-200: #e6e6e6;
-
-$bg: $white;
-
-$slideshow-btn: $gray-700;
-$slideshow-btn-hover: $black;
-$separator: $gray-200;
-
-$gallery-text: $white;
-$gradient-start: #00000000;
-$gradient-end: #000000d6;
+$gray-100: #f3f3f3;
+$gray-50: #00000023;
+$black-0: #00000000;
+$black-75: #000000bf;
+$black-84: #000000d6;
 
 $fs-xs: 10px;
 $fs-sm: 12px;
@@ -24,9 +19,14 @@ $fs-xl: 20px;
 $fs-1-5xl: 22px;
 $fs-2xl: 24px;
 $fs-3xl: 30px;
+$fs-4xl: 46px;
+$fs-5xl: 56px;
+$fs-hero: 100px;
+$fs-hero-xl: 200px;
 
 $break-sm: 702px;
 $break-md: 768px;
 $break-mdplus: 844px;
+$break-lg: 1024px;
 $break-xl: 1200px;
 $break-xxl: 1440px;

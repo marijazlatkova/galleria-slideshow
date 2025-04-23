@@ -1,8 +1,13 @@
 @use "../styles/index" as *;
 
 .App {
-  background: $bg;
+  background: $white;
   padding: 0 24px;
+
+  @include lg {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 
   @include xxl {
     padding: 0 80px;

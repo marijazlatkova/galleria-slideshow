@@ -31,7 +31,7 @@
 
 .slideshowBtn {
   background: transparent;
-  color: $slideshow-btn;
+  color: $gray-700;
   font-size: $fs-xs;
   border: none;
   font-weight: 700;
@@ -41,7 +41,7 @@
   cursor: pointer;
 
   &:hover {
-    color: $slideshow-btn-hover;
+    color: $black;
   }
 
   @include md {
@@ -50,6 +50,6 @@
 }
 
 .separator {
-  border: 1px solid $separator;
+  border: 1px solid $gray-200;
   width: 100%;
 }

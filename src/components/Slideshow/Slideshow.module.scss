@@ -1,0 +1,405 @@
+@use "../../styles/index" as *;
+
+.slideshow {
+  position: relative;
+}
+
+.slide {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.content {
+  padding: 10px 0;
+
+  @include sm {
+    padding: 20px 0;
+  }
+
+  @include xl {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+  }
+}
+
+.images {
+  position: relative;
+
+  @include sm {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: scaleFade 0.8s ease forwards;
+}
+
+.heroLarge {
+  display: none;
+
+  @include sm {
+    display: unset;
+    margin-top: 40px;
+    width: 410px;
+  }
+
+  @include xl {
+    margin: 0;
+    width: 475px;
+  }
+}
+
+.heroSmall {
+  margin-top: 24px;
+  display: block;
+  max-width: 100%;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  @include sm {
+    top: unset;
+    bottom: 16px;
+  }
+}
+
+.viewBtn {
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  font-weight: 700;
+  font-size: $fs-xs;
+  text-align: right;
+  letter-spacing: 2.14286px;
+  color: $white;
+  width: 152px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text {
+  width: 320px;
+  max-width: 80%;
+  padding: 24px;
+  background: white;
+  margin-top: -54px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: -1px 0 0 0 white;
+  animation: slideTextIn 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+
+  @include sm {
+    justify-content: flex-start;
+    width: 445px;
+    height: 238px;
+    padding-left: 50px;
+    position: absolute;
+    right: 0;
+    top: 39px;
+  }
+
+  @include mdplus {
+    right: unset;
+    left: 350px;
+  }
+
+  @include xl {
+    top: -1px;
+    left: 400px;
+  }
+
+  @include xxl {
+    left: 400px;
+  }
+}
+
+.artName {
+  font-weight: 700;
+  font-size: $fs-1-5xl;
+  line-height: 29px;
+  text-transform: unset;
+  text-align: left;
+  color: $black;
+  letter-spacing: unset;
+
+  @include sm {
+    font-size: $fs-4xl;
+    line-height: 64px;
+    width: 80%;
+  }
+
+  @include xl {
+    font-size: $fs-5xl;
+    width: 90%;
+  }
+}
+
+.artistName {
+  font-weight: 400;
+  font-size: $fs-base;
+  line-height: 19px;
+  color: $gray-700;
+
+  @include xxl {
+    font-size: $fs-md;
+  }
+}
+
+.artistImg {
+  width: 64px;
+  margin-left: 16px;
+
+  @include sm {
+    width: 128px;
+    margin-left: 30px;
+    margin-top: 145px;
+  }
+
+  @include xl {
+    margin-top: auto;
+  }
+
+  @include xxl {
+    margin-bottom: -60px;
+  }
+}
+
+.info {
+  position: relative;
+
+  @include sm {
+    margin-top: 64px;
+  }
+
+  @include xl {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.description {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: $fs-base;
+  line-height: 28px;
+  color: $gray-700;
+  padding-bottom: 40px;
+
+  @include sm {
+    padding-left: 124px;
+    padding-right: 110px;
+    padding-top: 75px;
+  }
+
+  @include xl {
+    padding: 0;
+    width: 350px;
+    margin: 0;
+  }
+}
+
+.year {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $fs-hero;
+  line-height: 100px;
+  text-align: right;
+  color: $gray-100;
+  z-index: -1;
+  animation: fadeYearIn 1s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+
+  @include sm {
+    left: 0;
+    right: unset;
+    top: 0;
+    font-size: $fs-hero-xl;
+    line-height: 150px;
+  }
+
+  @include xl {
+    top: 70px;
+  }
+
+  @include xxl {
+    top: -95px;
+  }
+}
+
+.source {
+  font-weight: 700;
+  font-size: $fs-xs;
+  line-height: 11px;
+  letter-spacing: 1.92857px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: $gray-700;
+
+  &:hover {
+    color: $black;
+  }
+
+  @include sm {
+    padding-left: 124px;
+  }
+
+  @include xl {
+    padding: 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black-75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box {
+  border-radius: 5px;
+  position: relative;
+}
+
+.modalImg {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.closeBtn {
+  margin-top: 10px;
+  position: absolute;
+  top: -50px;
+  right: 24px;
+  font-weight: 700;
+  font-size: $fs-base;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 3px;
+  color: $white;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+}
+
+.nav {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  position: relative;
+
+  @include xl {
+    margin-top: 120px;
+  }
+}
+
+.navLine {
+  position: absolute;
+  top: 0;
+  background: black;
+  height: 1px;
+  z-index: 2;
+  transition: 0.3s all ease-in-out;
+}
+
+.emptyLine {
+  position: absolute;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background: #00000023;
+}
+
+.navTitle {
+  font-weight: 400;
+  font-size: $fs-xs;
+  line-height: 12px;
+  color: $black;
+  opacity: 0.75;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navArtName {
+  font-size: $fs-base;
+  color: $black;
+
+  @include xl {
+    font-size: $fs-lg;
+  }
+}
+
+.navArtistName {
+  @include xl {
+    font-size: $fs-sm;
+  }
+}
+
+.navButtons {
+  display: flex;
+  gap: 23px;
+}
+
+.navBtn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 16px;
+
+  &:hover {
+    filter: invert(50%);
+  }
+
+  @include xxl {
+    width: 25px;
+  }
+}
+
+.details {
+  @include xl {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 100px;
+    gap: 10px;
+  }
+
+  @include xxl {
+    margin-top: unset;
+    margin-top: auto;
+    gap: 81px;
+  }
+}
