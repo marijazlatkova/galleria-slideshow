@@ -1,0 +1,35 @@
+@use "../../../styles/index" as *;
+
+.modal {
+  background: $black-75;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  inset: 0;
+}
+
+.modalBox {
+  position: relative;
+  border-radius: 5px;
+}
+
+.modalImg {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.closeBtn {
+  background: none;
+  color: $white;
+  position: absolute;
+  top: -50px;
+  right: 24px;
+  font-size: $fs-base;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+}

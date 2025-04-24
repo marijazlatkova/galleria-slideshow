@@ -1,0 +1,77 @@
+@use "../../../styles/index" as *;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 72px;
+  margin-top: 40px;
+
+  @include xl {
+    margin-top: 120px;
+  }
+}
+
+.navLine {
+  background: $black;
+  position: absolute;
+  top: 0;
+  height: 1px;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.emptyLine {
+  background: $gray-50;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.navTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: $black;
+  font-size: $fs-xs;
+  font-weight: 400;
+  line-height: 12px;
+  opacity: 0.75;
+}
+
+.navArtName {
+  color: $black;
+  font-size: $fs-base;
+
+  @include xl {
+    font-size: $fs-lg;
+  }
+}
+
+.navArtistName {
+  @include xl {
+    font-size: $fs-sm;
+  }
+}
+
+.navButtons {
+  display: flex;
+  gap: 23px;
+}
+
+.navBtn {
+  width: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    filter: invert(50%);
+  }
+
+  @include xxl {
+    width: 25px;
+  }
+}
