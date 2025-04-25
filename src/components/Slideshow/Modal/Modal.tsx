@@ -7,10 +7,26 @@ type ModalProps = {
 };
 
 export const Modal = ({ active, onClose }: ModalProps) => (
-  <div className={styles.modal} onClick={onClose}>
-    <div className={styles.modalBox} onClick={(e) => e.stopPropagation()}>
-      <img src={active.images.gallery} alt={active.name} className={styles.modalImg} />
-      <button className={styles.closeBtn} onClick={onClose}>Close</button>
+  <section
+    onClick={onClose}
+    className={styles.modal}
+  >
+    <div
+      onClick={(e) => e.stopPropagation()}
+      className={styles.modalBox}
+    >
+      <img
+        src={active.images.gallery}
+        className={styles.modalImg}
+        alt={active.name}
+      />
+      <button
+        className={styles.closeBtn}
+        onClick={onClose}
+        aria-label="Close modal"
+      >
+        Close
+      </button>
     </div>
-  </div>
+  </section>
 );

@@ -18,7 +18,7 @@
   }
 }
 
-.images {
+.artwork {
   position: relative;
 
   @include sm {
@@ -27,7 +27,7 @@
   }
 }
 
-.fade {
+.images {
   animation: scaleFade 0.8s ease forwards;
   opacity: 0;
 }
