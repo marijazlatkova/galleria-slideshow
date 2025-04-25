@@ -8,16 +8,16 @@ export const Gallery = () => {
       <div className={styles.gallery}>
         {data.map((item, i) => (
           <Link
-            className={styles.card}
-            to={`/slideshow/${item.id}`}
             key={item.id}
+            to={`/slideshow/${item.id}`}
+            className={styles.card}
             aria-label={`View slideshow for ${item.name} by ${item.artist.name}`}
             style={{ animationDelay: `${i * 0.2}s` }}
           >
             <div className={styles.overlay}></div>
             <img
-              className={styles.thumbnail}
               src={item.images.thumbnail}
+              className={styles.thumbnail}
               alt={item.name}
             />
             <div

@@ -23,8 +23,8 @@ export const Header = () => {
           aria-label="Go to homepage"
         >
           <img
-            className={styles.logo}
             src={icons.logo}
+            className={styles.logo}
             alt="Galleria logo"
           />
         </Link>
