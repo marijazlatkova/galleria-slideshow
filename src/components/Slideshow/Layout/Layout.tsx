@@ -17,8 +17,8 @@ export const Layout = ({ active, setModalOpen }: LayoutProps) => {
     return () => clearTimeout(timeout);
   }, [active]);
 
-    return(
-    <section className={styles.layout}>
+    return (
+      <section className={styles.layout}>
         <div className={`${styles.content} ${flip ? styles.flipAnimation : ""}`}>
           <div className={styles.artwork}>
             <div key={active.id} className={styles.images}>
