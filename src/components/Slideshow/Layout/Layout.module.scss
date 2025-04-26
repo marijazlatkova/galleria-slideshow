@@ -98,6 +98,7 @@
   margin-top: -54px;
   box-shadow: -1px 0 0 $white;
   transform: translateY(20px);
+  animation: slideTextIn 0.8s ease forwards;
 
   @include sm {
     position: absolute;
