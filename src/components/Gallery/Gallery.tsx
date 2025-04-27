@@ -5,6 +5,7 @@ import styles from "./Gallery.module.scss";
 export const Gallery = () => {
   return (
     <main>
+      <h1 className={styles.hidden}>Galleria Slideshow</h1>
       <div className={styles.gallery}>
         {data.map((item, i) => (
           <Link

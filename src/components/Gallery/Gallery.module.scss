@@ -1,5 +1,16 @@
 @use "../../styles/index" as *;
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .gallery {
   display: grid;
   grid-auto-rows: auto;
@@ -97,6 +108,7 @@
   width: 80%;
   margin: 0 0 20px 5%;
   z-index: 6;
+  animation: fadeText 0.8s ease-in-out forwards;
 
   @include xxl {
     width: 73%;
