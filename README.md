@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Galleria Slideshow](https://i.imgur.com/n9Ak2xf.jpg)
+![Galleria Slideshow](https://i.imgur.com/Ok5WmTc.jpg)
 
 ### Links
 
