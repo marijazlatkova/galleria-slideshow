@@ -22,8 +22,8 @@ export const Modal = ({ active, onClose }: ModalProps) => {
           alt={active.name}
         />
         <button
-          className={styles.closeBtn}
           onClick={onClose}
+          className={styles.closeBtn}
           aria-label="Close modal"
         >
           Close

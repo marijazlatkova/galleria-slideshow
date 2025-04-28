@@ -14,7 +14,8 @@ export const Navigation = ({ active, progress, onPrev, onNext }: NavigationProps
     <section className={styles.nav}>
       <div
         className={styles.navLine}
-        style={{ width: `${progress}%` }}>
+        style={{ width: `${progress}%` }}
+      >
       </div>
       <div className={styles.emptyLine}></div>
       <div className={styles.navTitle}>
