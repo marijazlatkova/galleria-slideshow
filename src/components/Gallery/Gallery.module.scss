@@ -32,8 +32,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  // animation: fadeLift 0.6s ease forwards;
-  // opacity: 0;
+  animation: fadeLift 0.6s ease forwards;
+  opacity: 0;
   cursor: pointer;
 
   &:hover {
@@ -94,7 +94,7 @@
   width: 80%;
   margin: 0 0 20px 5%;
   z-index: 6;
-  // animation: fadeLift 0.8s ease forwards;
+  animation: fadeLift 0.8s ease forwards;
 
   @include xxl {
     width: 73%;
