@@ -37,12 +37,12 @@
 
   &:hover {
     .thumbnail {
-      opacity: 0.7;
+      filter: brightness(85%);
     }
 
-    .overlay,
     .text {
       opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -87,18 +87,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  @include fade-opacity;
-}
-
-.overlay {
-  background: linear-gradient(180deg, $black-0, $black-84 130%);
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  z-index: 5;
-  @include fade-opacity;
+  transition: filter 0.3s ease-in-out;
 }
 
 .text {
@@ -108,7 +97,10 @@
   width: 80%;
   margin: 0 0 20px 5%;
   z-index: 6;
+  opacity: 0;
+  visibility: hidden;
   animation: fadeText 0.8s ease-in-out forwards;
+  transition: opacity 0.3s ease-in-out 0.15s, visibility 0s linear 0s;
 
   @include xxl {
     width: 73%;

@@ -15,7 +15,6 @@ export const Gallery = () => {
             aria-label={`View slideshow for ${item.name} by ${item.artist.name}`}
             style={{ animationDelay: `${i * 0.2}s` }}
           >
-            <div className={styles.overlay}></div>
             <img
               src={item.images.thumbnail}
               className={styles.thumbnail}
